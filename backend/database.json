@@ -1,0 +1,137 @@
+{
+    "users": [
+        {
+            "id": 0,
+            "name": "Rodrigo Rahman",
+            "email": "rodrigorahman@academiadoflutter.com.br",
+            "password": "123"
+        },
+        {
+            "id": 1,
+            "name": "Guilherme",
+            "email": "guilherme@gmail.com",
+            "password": "1234"
+        }
+    ],
+    "adm_users": [
+        {
+            "id": 1,
+            "name": "Rodrigo Rahman",
+            "email": "rodrigorahman@academiadoflutter.com.br",
+            "password": "123",
+            "profile": "ADMIN"
+        },
+        {
+            "id": 2,
+            "name": "Guilherme",
+            "email": "Guilherme@gmail.com",
+            "password": "1234",
+            "profile": "SUPORTE"
+        }
+    ],
+    "products": [
+        {
+            "id": 0,
+            "title": "Academia do flutter"
+        },
+        {
+            "id": 1,
+            "title": "Jornada Dart"
+        },
+        {
+            "id": 2,
+            "title": "Jornada GetX"
+        }
+    ],
+    "alunos": [
+        {
+            "id": 0,
+            "nome": "Gustavo Liesch",
+            "idade": 21,
+            "nomeCursos": [
+                "Academia do flutter",
+                "Jornada GetX",
+                "Jornada bloc"
+            ],
+            "cursos": [
+                {
+                    "id": 1,
+                    "nome": "Academia do flutter",
+                    "isAluno": true
+                },
+                {
+                    "id": 2,
+                    "nome": "Jornada GetX",
+                    "isAluno": true
+                },
+                {
+                    "id": 3,
+                    "nome": "Jornada bloc",
+                    "isAluno": true
+                },
+                {
+                    "id": 4,
+                    "nome": "Jornada clean code",
+                    "isAluno": false
+                }
+            ],
+            "endereco": {
+                "rua": "Rua xx",
+                "numero": 171,
+                "CEP": "23250220",
+                "cidade": {
+                    "id": 1,
+                    "nome": "Porto União"
+                },
+                "telefone": {
+                    "ddd": 11,
+                    "telefone": 35233541
+                }
+            }
+        },
+        {
+            "id": 0,
+            "nome": "Pedro Liesch",
+            "idade": 21,
+            "nomeCursos": [
+                "Academia do flutter"
+               
+            ],
+            "cursos": [
+                {
+                    "id": 1,
+                    "nome": "Academia do flutter",
+                    "isAluno": true
+                },
+                {
+                    "id": 2,
+                    "nome": "Jornada GetX",
+                    "isAluno": false
+                },
+                {
+                    "id": 3,
+                    "nome": "Jornada bloc",
+                    "isAluno": false
+                },
+                {
+                    "id": 4,
+                    "nome": "Jornada clean code",
+                    "isAluno": false
+                }
+            ],
+            "endereco": {
+                "rua": "Rua zz",
+                "numero": 171,
+                "CEP": "23250229",
+                "cidade": {
+                    "id": 1,
+                    "nome": "Porto União"
+                },
+                "telefone": {
+                    "ddd": 11,
+                    "telefone": 35233545
+                }
+            }
+        }
+    ]
+}
