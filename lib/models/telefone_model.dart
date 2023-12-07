@@ -24,13 +24,15 @@ class TelefoneModel {
 
   //Passo 2 da deserialização
   factory TelefoneModel.fromMap(Map<String, dynamic> map) {
-    return TelefoneModel(ddd: map['ddd'], numeroTelefone: map['numeroTelefone']);
+    return TelefoneModel
+    (ddd: map['ddd'] ?? 0, 
+    numeroTelefone: map['numeroTelefone'] ?? '',
+    );
   }
 
 
   //Passo 1 da deserialização
-  factory TelefoneModel.fromJson(String json) {
-    final jsonMap = jsonDecode(json);
-    return TelefoneModel.fromMap(jsonMap);
-  }
+  factory TelefoneModel.fromJson(String json) => TelefoneModel.fromMap(jsonDecode(json));
+  
+  
 }
