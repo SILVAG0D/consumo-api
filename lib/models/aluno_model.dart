@@ -49,4 +49,9 @@ class AlunoModel {
   }
 
   factory AlunoModel.fromJson(String json) => AlunoModel.fromJson(json);
+
+  @override
+  String toString() {
+    return 'Aluno: $nome($id)';
+  }
 }
