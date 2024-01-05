@@ -4,14 +4,10 @@ class CidadeModel {
   int idCidade;
   String nomeCidade;
 
-  CidadeModel({required this.idCidade,required this.nomeCidade});
+  CidadeModel({required this.idCidade, required this.nomeCidade});
 
-
-  Map<String,dynamic> toMap() {
-    return {
-      'id': idCidade,
-      'nome': nomeCidade
-    };
+  Map<String, dynamic> toMap() {
+    return {'id': idCidade, 'nome': nomeCidade};
   }
 
   String toJson() => jsonEncode(toMap());
@@ -20,5 +16,6 @@ class CidadeModel {
     return CidadeModel(idCidade: map['id'], nomeCidade: map['nome']);
   }
 
-  factory CidadeModel.fromJson(String json) => CidadeModel.fromJson(jsonDecode(json));
+  factory CidadeModel.fromJson(String json) =>
+      CidadeModel.fromJson(jsonDecode(json));
 }
